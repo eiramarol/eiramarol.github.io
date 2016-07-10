@@ -1,0 +1,67 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+}
+
+.navbar .navbar-nav{
+    display: inline-block;
+/*     background-color:rgba(255,255,255,1); */
+    float: none;
+    margin-bottom: 0;
+
+}
+.navbar .navbar-collapse {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.sect1{
+    /* padding-top: 30%; */
+    background: url("http://i.imgur.com/fhoy3sV.jpg") center center fixed no-repeat;
+
+}
+.sect2{
+    padding-top: 30%;
+    background-color: green;
+}
+.sect3{
+    padding-top: 50%;
+    background: url("http://i.imgur.com/fsJUAvK.jpg")center center fixed no-repeat;
+     /* min-height: 768px; */
+}
+.sect4{
+    padding-top: 30%;
+    background-color: green;
+}
+.sect5{
+    padding-top: 50%;
+    background: url("http://i.imgur.com/O0okMpQ.jpg") no-repeat center center fixed;
+}
+.collapseBtn{
+    background-color: rgba(0,0,0,.5);
+    color: rgba(255,255,255,.8);
+}
+.jumbotron{
+
+  padding-top: 25%;
+  padding-bottom: 30%;
+  background-color: transparent;
+}
+h1.h1Style,h4{
+    color: rgba(255,255,255,.7);
+}
+div.full{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 768px;
+    height:100%;
+
+}
