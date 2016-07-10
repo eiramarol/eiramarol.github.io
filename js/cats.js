@@ -16,13 +16,7 @@ $(document).ready(function() {
         $("#"+$(this).attr("id")).css('background','rgba(255,255,255,.7)');
     });
 
-// collapse BG
-        // $(".collapseBtn").click( function() {
-        //     if ($(window)) {
-        //         // statement
-        //     }
-        //     $(".navbar").toggleClass('collapseColor');
-        // });
+
 
 });
 
