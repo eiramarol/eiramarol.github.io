@@ -8,7 +8,13 @@ h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 600;
 }
-
+.navbar{
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color:rgba(255,255,255,.15);
+    /* text-align: center; */
+}
 .navbar .navbar-nav{
     display: inline-block;
 /*     background-color:rgba(255,255,255,1); */
@@ -16,40 +22,43 @@ h6 {
     margin-bottom: 0;
 
 }
-.navbar .navbar-collapse {
+.navbar-collapse {
     text-align: center;
     margin-bottom: 0;
+
 }
 
 .sect1{
     /* padding-top: 30%; */
-    background: url("http://i.imgur.com/fhoy3sV.jpg") center center fixed no-repeat;
+    background: url("http://i.imgur.com/Z6PBLjU.jpg") center center fixed no-repeat;
 
 }
 .sect2{
-    padding-top: 30%;
-    background:url("");
+    padding-top: 5%;
+    background:url("http://i.imgur.com/q0bqeXR.jpg") center center fixed no-repeat;
 }
 .sect3{
-    padding-top: 50%;
-    background: url("http://i.imgur.com/fsJUAvK.jpg")center center fixed no-repeat;
+    padding-top: 10%;
+    background: url("http://i.imgur.com/TCAWQ4A.jpg")center center fixed no-repeat;
      /* min-height: 768px; */
 }
 .sect4{
-    padding-top: 30%;
-    background-color: green;
+    padding-top: 10%;
+    background: url("http://i.imgur.com/HTX8oit.jpg")center center fixed no-repeat;
 }
-.sect5{
-    padding-top: 50%;
-    background: url("http://i.imgur.com/O0okMpQ.jpg") no-repeat center center fixed;
+footer{
+    padding-top: 10%;
+    background-color: rgba(51,51,51,1);
+}
+.overLay{
+    background-color: rgba(0,0,0,.5);
 }
 .collapseBtn{
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.9);
     color: rgba(255,255,255,.8);
 }
 .jumbotron{
-
-  padding-top: 25%;
+  padding-top: 35%;
   padding-bottom: 30%;
   background-color: transparent;
 }
@@ -64,10 +73,8 @@ div.full{
     min-height: 768px;
     height:100%;
 
+
 }
-/* .fa{
-    color: rgba(255,255,255,.7);
-} */
 .socialBtn{
     border-radius: 100%;
     background: rgba(255,255,255,.7);
