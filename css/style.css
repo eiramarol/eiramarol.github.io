@@ -28,7 +28,7 @@ h6 {
 }
 .sect2{
     padding-top: 30%;
-    background-color: green;
+    background:url("");
 }
 .sect3{
     padding-top: 50%;
@@ -64,4 +64,16 @@ div.full{
     min-height: 768px;
     height:100%;
 
+}
+/* .fa{
+    color: rgba(255,255,255,.7);
+} */
+.socialBtn{
+    border-radius: 100%;
+    background: rgba(255,255,255,.7);
+}
+abbr[title]{
+    border-bottom: none;
+    cursor: inherit;
+    text-decoration: none;
 }
