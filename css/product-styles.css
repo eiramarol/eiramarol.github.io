@@ -49,6 +49,7 @@ body {
     justify-content: flex-end;
     padding: 0;
     width: 100%;
+    padding-right: 15px;
 }
 
 ul {
@@ -216,6 +217,10 @@ input[type="submit"] {
 
 }
 
+.description {
+    font-size: 1.25rem;
+}
+
 #Salads,
 #Wraps {
     background-color: var(--text-color1);
@@ -225,7 +230,7 @@ input[type="submit"] {
 section img {
     height: 400px;
     width: 400px;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 #Pastas {
@@ -273,11 +278,11 @@ footer {
 }
 
 
-@media screen and (min-width:320px) and (max-width:600px) {
+@media screen and (min-width:320px) and (max-width:360px) {
 
     #header {
         width: 100%;
-        height: auto;
+        /* height: auto; */
         position: fixed;
         padding: 0;
         background-color: var(--header-bg);
@@ -290,26 +295,50 @@ footer {
     }
 
     #nav-bar {
-        display: flex;
         justify-content: space-around;
-        align-items: center;
+        padding: 0;
+
     }
 
     .nav-link {
-        font-size: 2rem;
+        font-size: 1.5rem;
 
     }
 
-    .email-video {
-        padding-top: 25px;
+    .email-section,
+    .video-section {
+        padding: 0;
+    }
 
+    .email-section {
+        height: calc(100vh - 220px);
+        padding-top: 220px;
+    }
+
+    .video-section {
+        height: calc(100vh-20px);
+        margin-bottom: 60px;
+    }
+
+    .input-group {
+        padding: 1rem;
+        font-size: 1rem;
     }
 
     .product-section {
-        padding: 50px;
+        height: calc(100vh - 25px);
+        padding-top: 25px;
+    }
+
+    section img {
+        height: 20rem;
+        width: 20rem;
     }
 
     .description {
         text-align: justify;
+        width: 20rem;
+        font-size: 1rem;
+        align-self: flex-start;
     }
 }
