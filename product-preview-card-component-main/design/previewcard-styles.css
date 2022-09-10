@@ -157,7 +157,7 @@ footer {
     .product-name {
         font-size: 1.8rem;
         padding-right: 15px;
-        padding-top: 25px;
+        padding-top: 15px;
         padding-bottom: 15px;
     }
 
@@ -204,8 +204,8 @@ footer {
     .product-name {
         font-size: 1.8rem;
         padding-right: 15px;
-        padding-top: 25px;
-        padding-bottom: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .product-details {
