@@ -111,6 +111,7 @@ footer {
     flex: 1;
 }
 
+
 .description {
     font-size: .9rem;
 }
@@ -138,7 +139,7 @@ footer {
 
 
 /* mobile S, mobile M */
-@media only screen and (max-width:376px) {
+@media only screen and (min-width:320px) and (max-width:370px) {
 
     .container {
         height: calc(100vh - 170px);
@@ -164,11 +165,12 @@ footer {
     .product-details {
         margin-left: 15px;
         margin-top: 10px;
-        padding: 5px 20px 5px 15px;
+        padding: 5px 15px 5px 10px;
     }
 
     .description {
         padding-bottom: 15px;
+        /* font-size: .8rem; */
     }
 
     .container img {
@@ -179,13 +181,67 @@ footer {
     }
 
     .btn {
-        width: calc(100% - 50px);
+        width: calc(325px - 75px);
+        /* align-self: center; */
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: -10px;
     }
 
 
 }
 
-@media only screen and (min-width:377px) and (max-width:600px) {
+@media only screen and (min-width:375px) and (max-width:399px) {
+    .container {
+        height: calc(100vh - 170px);
+        /* max-height: 600px; */
+        min-width: 300px;
+        max-width: 350px;
+        background-color: var(--btn-text);
+        border-radius: 15px;
+        margin: 20% 2% 20% 4%;
+        padding-bottom: 25px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .product-name {
+        font-size: 1.8rem;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .product-details {
+        margin-left: 15px;
+        margin-top: 10px;
+        padding: 5px 15px 5px 10px;
+    }
+
+    .description {
+        padding-bottom: 15px;
+        /* font-size: .8rem; */
+    }
+
+    .container img {
+        content: url("/images/image-product-mobile.jpg");
+        border-radius: 15px 15px 0 0;
+        max-height: 45%;
+        align-self: flex-start;
+    }
+
+    .btn {
+        width: calc(375px - 75px);
+        margin-left: -5px;
+        margin-top: 15px;
+        margin-bottom: -10px;
+    }
+
+
+}
+
+@media only screen and (min-width:400px) and (max-width:600px) {
 
     .container {
         height: calc(100vh - 130px);
@@ -211,11 +267,12 @@ footer {
     .product-details {
         margin-left: 15px;
         margin-top: 10px;
-        padding: 5px 20px 5px 15px;
+        padding: 5px 20px;
+        font-size: 1rem;
     }
 
     .description {
-        padding-bottom: 15px;
+        padding-bottom: 20px;
     }
 
     .container img {
@@ -226,6 +283,10 @@ footer {
     }
 
     .btn {
-        width: calc(100% - 50px);
+        width: calc(425px - 125px);
+        margin-left: -10px;
+        margin-top: 20px;
+        margin-bottom: -10px;
     }
+
 }
