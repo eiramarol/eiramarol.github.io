@@ -51,6 +51,7 @@ h1 {
     font-size: 2rem;
     color: var(--text-color1);
     line-height: 1;
+
 }
 
 button {
@@ -65,10 +66,14 @@ button {
 
 }
 
-button p {
+.btn {
+    display: flex;
+    align-items: center;
     font-size: 1rem;
     padding-left: 10px;
+
 }
+
 
 footer {
     text-align: center;
@@ -132,37 +137,95 @@ footer {
 }
 
 
-
-@media only screen and (max-width:400px) {
-
+/* mobile S, mobile M */
+@media only screen and (max-width:376px) {
 
     .container {
-        height: calc(100vh - 30px);
+        height: calc(100vh - 170px);
+        /* max-height: 600px; */
+        min-width: 300px;
+        max-width: 350px;
         background-color: var(--btn-text);
         border-radius: 15px;
-        margin-left: 15px;
-        margin-top: 25px;
-        margin-bottom: 30px;
-        padding-bottom: 10px;
+        margin: 20% 2% 20% 4%;
+        padding-bottom: 25px;
+        align-items: center;
+        justify-content: center;
 
-        /* padding: 5px 30px 10px 22px; */
-    }
-
-    .product-details {
-        /* padding: 0; */
-        margin-left: 15px;
-        padding-left: 15px;
-        padding-right: 20px;
     }
 
     .product-name {
+        font-size: 1.8rem;
         padding-right: 15px;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+
+    .product-details {
+        margin-left: 15px;
+        margin-top: 10px;
+        padding: 5px 20px 5px 15px;
+    }
+
+    .description {
+        padding-bottom: 15px;
     }
 
     .container img {
         content: url("/images/image-product-mobile.jpg");
         border-radius: 15px 15px 0 0;
-        max-height: 300px;
+        max-height: 45%;
+        align-self: flex-start;
     }
 
+    .btn {
+        width: calc(100% - 50px);
+    }
+
+
+}
+
+@media only screen and (min-width:377px) and (max-width:600px) {
+
+    .container {
+        height: calc(100vh - 130px);
+        /* max-height: 600px; */
+        min-width: 300px;
+        max-width: 350px;
+        background-color: var(--btn-text);
+        border-radius: 15px;
+        margin: 10% 0 25% 35px;
+        padding-bottom: 25px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .product-name {
+        font-size: 1.8rem;
+        padding-right: 15px;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+
+    .product-details {
+        margin-left: 15px;
+        margin-top: 10px;
+        padding: 5px 20px 5px 15px;
+    }
+
+    .description {
+        padding-bottom: 15px;
+    }
+
+    .container img {
+        content: url("/images/image-product-mobile.jpg");
+        border-radius: 15px 15px 0 0;
+        max-height: 45%;
+        align-self: flex-start;
+    }
+
+    .btn {
+        width: calc(100% - 50px);
+    }
 }
