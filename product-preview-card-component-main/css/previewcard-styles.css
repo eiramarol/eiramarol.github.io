@@ -39,6 +39,7 @@ h1 {
 h1 {
     letter-spacing: 2px;
     font-weight: 500;
+    color: red;
 }
 
 .product-name,
