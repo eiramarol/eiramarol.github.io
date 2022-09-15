@@ -82,8 +82,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/eiramarol/eiramarol.github.io/tree/master/product-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://eiramarol.github.io/product-preview-card-component-main/product-preview-card)
+- Solution URL: [Product preview card component](https://github.com/eiramarol/eiramarol.github.io/tree/master/product-preview-card-component-main)
+- Live Site URL: [Product preview card component](https://eiramarol.github.io/product-preview-card-component-main/product-preview-card)
 
 ## My process
 
