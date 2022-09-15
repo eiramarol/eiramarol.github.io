@@ -62,7 +62,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
   <!-- - [Continued development](#continued-development) -->
   <!-- - [Useful resources](#useful-resources) -->
 - [Author](#author)
-<!-- - [Acknowledgments](#acknowledgments) -->
+- [Acknowledgments](#acknowledgments)
 <!-- 
 **Note: Delete this note and update the table of contents based on what sections you keep.** -->
 
@@ -98,4 +98,6 @@ Users should be able to:
 - Website - [Eiramarol](eiramarol.github.io)
 - Frontend Mentor - [@eiramarol](https://www.frontendmentor.io/profile/eiramarol)
 <!-- - Twitter - [@eiramarol](https://twitter.com/eiramarol) -->
+## Acknowledgments
 
+Thanks to [@vcarames](https://www.frontendmentor.io/profile/vcarames), [@dazenk](https://www.frontendmentor.io/profile/dazenk) and [@correlucas](https://www.frontendmentor.io/profile/correlucas) for helping me improve my solution to this challenge.
