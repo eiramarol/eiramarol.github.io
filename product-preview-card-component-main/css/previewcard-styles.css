@@ -23,6 +23,12 @@
 body {
     background: var(--main-bg);
     color: var(--text-color2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 body,
@@ -31,7 +37,6 @@ button,
 h1 {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    padding-right: 15px;
     font-weight: 500;
 
 }
@@ -39,7 +44,6 @@ h1 {
 h1 {
     letter-spacing: .3rem;
     font-weight: 500;
-    /* color: red; */
 }
 
 .product-name,
@@ -67,11 +71,14 @@ button {
 
 }
 
+span {
+    margin-right: 5px;
+}
+
 .btn {
     display: flex;
     align-items: center;
     font-size: 1rem;
-    padding-left: 10px;
 
 }
 
@@ -91,11 +98,7 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     background-color: var(--btn-text);
-    max-width: 600px;
-    min-width: 300px;
-    height: 450px;
     border-radius: 15px;
-    margin: 155px auto;
 }
 
 .product-details {
@@ -120,6 +123,7 @@ footer {
 
 .description {
     font-size: .9rem;
+    line-height: 1.5;
 }
 
 .list-price {
@@ -145,30 +149,25 @@ footer {
 
 /* mobile S*/
 @media only screen and (max-width:320px) {
+
+    .container,
+    .container img {
+        width: 100vw;
+    }
+
     .container {
-        height: 545px;
-        min-width: 300px;
-        max-width: 350px;
+        height: calc(100vh - 170px);
         background-color: var(--btn-text);
         border-radius: 15px;
-        margin: 20% 2% 5% 2%;
-        padding-bottom: 5px;
-        align-items: center;
+        padding-bottom: 10px;
 
     }
 
     .container img {
-        content: url("/images/image-product-mobile.jpg");
         border-radius: 15px 15px 0 0;
-        max-height: 45%;
-        align-self: flex-start;
     }
 
-    .product-details {
-        padding-left: 15px;
-        padding-right: 10px;
 
-    }
 
     .product-name {
         font-size: 1.8rem;
@@ -176,8 +175,8 @@ footer {
     }
 
     .description {
-        font-size: .85rem;
-        padding: 10px 0 10px 0;
+        font-size: .8rem;
+        padding: 10px 5px 10px 0;
     }
 
     .product-name {
@@ -194,51 +193,44 @@ footer {
 /* mobile M */
 @media only screen and (min-width:360px) and (max-width:400px) {
 
-    .container {
-        /* height: calc(100vh - 50px); */
-        height: 585px;
-        min-width: 300px;
+    .container,
+    .container img {
+        min-width: 350px;
         max-width: 350px;
+    }
+
+    .container {
         background-color: var(--btn-text);
         border-radius: 15px;
-        margin: 10% 2% 20% 4%;
-        padding-bottom: 5px;
-        align-items: center;
-        /* justify-content: center; */
+
 
     }
 
     .product-name {
-        font-size: 1.8rem;
         padding-right: 15px;
         padding-top: 15px;
         padding-bottom: 15px;
     }
 
     .product-details {
-        padding: 0px 10px 5px 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
 
     }
 
     .description {
         padding-bottom: 15px;
-        padding-right: 10px;
     }
 
     .container img {
-        content: url("/images/image-product-mobile.jpg");
         border-radius: 15px 15px 0 0;
-        max-height: 45%;
-        align-self: flex-start;
+        min-width: 350px;
     }
 
     .btn {
         margin: 0;
         width: 300px;
-        /* align-self: center; */
-        /* margin-left: 10px; */
         margin-top: 15px;
-        /* margin-bottom: -10px; */
     }
 
 
@@ -247,32 +239,27 @@ footer {
 /* mobile - L */
 @media only screen and (min-width:414px) and (max-width:600px) {
 
-    .container {
-        height: calc(100vh - 275px);
-        min-height: 600px;
-        min-width: 300px;
+    .container,
+    .container img {
+        min-width: 350px;
         max-width: 350px;
+    }
+
+    .container {
         background-color: var(--btn-text);
         border-radius: 15px;
-        margin: 10% 0 25% 35px;
-        padding-bottom: 25px;
-        align-items: center;
-        justify-content: center;
+        padding-bottom: 15px;
 
     }
 
     .product-name {
-        font-size: 1.8rem;
         padding-right: 15px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
     .product-details {
-        margin-left: 15px;
         margin-top: 10px;
-        padding: 5px 20px;
-        font-size: 1rem;
     }
 
     .description {
@@ -280,17 +267,13 @@ footer {
     }
 
     .container img {
-        content: url("/images/image-product-mobile.jpg");
         border-radius: 15px 15px 0 0;
-        /* max-height: 45%; */
-        align-self: flex-start;
     }
 
     .btn {
         width: calc(425px - 125px);
-        margin-left: -10px;
         margin-top: 20px;
-        margin-bottom: -10px;
+        /* margin-bottom: -10px; */
     }
 
 }
