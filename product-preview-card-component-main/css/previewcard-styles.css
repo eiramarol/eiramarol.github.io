@@ -87,12 +87,12 @@ span {
     background-color: #1A4031;
 }
 
-/* 
+
 footer {
     position: absolute;
     align-self: flex-end;
     text-align: center;
-} */
+}
 
 .container {
     display: flex;
