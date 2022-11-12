@@ -84,6 +84,10 @@ Users should be able to:
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/productpreviewcard-1G-fMtF2Qm)
 - Live Site URL: [Github](https://eiramarol.github.io/product-preview-card-component-main/product-preview-card)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 17f93e20d0adc1510959e09d873f697b908060a3
 
 ## My process
 
