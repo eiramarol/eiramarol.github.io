@@ -1,0 +1,22 @@
+function zipIt(arr1, arr2){
+// Enter code below
+for(let i = 0; i< arr1.length; i+=2){
+  arr2.splice(i,0,arr1[i]);
+  arr1.splice(i,0,arr2[i]);
+}
+return arr2;
+}
+
+// Create a standalone function that accepts two arrays and combines their values sequentially into a new array, at alternating indices starting with first array. Extra values from either array should be included afterward.
+
+// Given [1,2] and [10,20,30,40], return new array containing [1,10,2,20,30,40].
+
+// zipIt([1,2], [10,20,30,40 ]) //to return [1,10,2,20,30,40]
+
+zipIt([1,2,3,4], [10,20 ]) //to return [1,10,2,20,3,4]
+
+// zipIt([1,2,3,4], [10,20,30,40 ]) //to return [1,10,2,20,3,30,4,40]
+
+// zipIt([1], [10,20 ]) //to return [1,10,20]
+
+// zipIt([1,2,3], [10 ]) //to return [1,10,2,3]
