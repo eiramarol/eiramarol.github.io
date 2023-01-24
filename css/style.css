@@ -1,0 +1,112 @@
+:root {
+    --txt-color: #f8f7f7;
+    --bg-color1: #0D1137;
+    --bg-color2: #E52165;
+    --bg-color3: #ffe1ea;
+    --btn-color: #e78dbb;
+
+
+}
+
+* {
+    background-color: var(--bg-color1);
+}
+
+@font-face {
+    font-family: "BaybayinDoctrinaClear";
+    src: url(/css/BaybayinDoctrinaClear.ttf)format("truetype");
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--txt-color);
+
+}
+
+footer {
+    padding-bottom: 15px;
+}
+
+
+#projects,
+#project-tile,
+h3.display-6 {
+    background-color: var(--bg-color3);
+}
+
+p.display-6,
+h3.display-6 {
+    color: var(--bg-color1);
+}
+
+.carousel-caption {
+    color: var(--txt-color);
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.carousel-caption h5,
+.carousel-indicators {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.nav-link {
+    color: var(--txt-color);
+}
+
+.navbar,
+.navbar-nav {
+    color: var(--txt-color);
+}
+
+#navbar,
+.container-fluid,
+.navbar-collapse,
+.navbar-nav,
+.nav-link,
+.navbar-brand,
+.navbar-toggler-icon {
+    background-color: var(--bg-color2);
+}
+
+.navbar-brand,
+.myName {
+    font-family: 'Press Start 2P', cursive;
+    color: var(--btn-color);
+
+}
+
+.navbar-brand {
+    color: var(--bg-color1);
+}
+
+.myTitle {
+    font-family: 'Teko', sans-serif;
+
+}
+
+.socials {
+    color: var(--btn-color);
+    text-decoration: none;
+}
+
+.btn.btn-link.socials:hover {
+    color: var(--txt-color);
+    text-shadow: 0px 5px 6px var(--bg-color2), 0px -2px 5px var(--bg-color3);
+}
+
+#hr {
+    border-color: var(--bg-color2) !important;
+}
+
+.pb {
+    padding-bottom: 100px;
+}
+
+@media (hover: hover) {
+    .nav-link:hover {
+        color: var(--bg-color1);
+        text-decoration: wavy underline;
+        font-weight: 900;
+
+    }
+}
