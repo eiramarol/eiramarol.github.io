@@ -94,7 +94,7 @@ ul {
     background-color: var(--bg-color1);
     align-items: center;
     padding-bottom: 45px;
-    padding-top: 75px;
+    padding-top: 1.5rem;
 
 }
 
@@ -224,8 +224,7 @@ input[type="submit"] {
 
 }
 
-#Salads,
-#Wraps {
+.odd-section {
     background-color: var(--text-color1);
     color: var(--text-color2);
 }
@@ -327,16 +326,31 @@ footer {
 
     .video-section {
         height: 100vh;
-        padding-top: 1rem;
     }
 
-}
+    #video {
+        width: 90vw;
+    }
 
-.product-section {
-    padding: 50px;
-}
+    .description {
+        margin: 0 2rem;
+        font-size: 1.25rem;
+        border: red 1px solid;
+        align-self: unset;
+        height: fit-content;
+    }
 
-.description {
-    text-align: justify;
-}
+    .section-title {
+        padding-bottom: 1rem;
+    }
+
+    .product-section {
+        padding-bottom: 0;
+    }
+
+    .section-title {
+        position: relative;
+        top: 32rem;
+    }
+
 }
