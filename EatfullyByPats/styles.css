@@ -43,12 +43,8 @@ body {
     overflow-y: scroll;
 }
 
-main {
-    /*   height:100vh; */
-}
-
 .logo {
-    margin-left: 12rem;
+    margin-left: 10rem;
     height: 6rem;
 }
 
@@ -94,15 +90,13 @@ ul {
     background-color: var(--bg-color1);
     align-items: center;
     padding-bottom: 45px;
-    padding-top: 1.5rem;
-
+    padding-top: 1.75rem;
+    height: 100vh;
 }
 
 .email-section,
 .video-section {
     width: 400px;
-    /* border: solid 2px pink; */
-    padding-top: 75px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -115,7 +109,7 @@ iframe {
 
 #video {
     width: 375px;
-    height: 667px;
+    height: 45rem;
 }
 
 .tagline {
@@ -335,7 +329,6 @@ footer {
     .description {
         margin: 0 2rem;
         font-size: 1.25rem;
-        border: red 1px solid;
         align-self: unset;
         height: fit-content;
     }
