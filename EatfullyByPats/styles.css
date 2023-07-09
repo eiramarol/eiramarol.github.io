@@ -1,8 +1,8 @@
 :root {
-    --text-color1: #fefae0;
+    --text-color1: #ffffff;
     --text-color2: #053b06;
     --text-color3: #ffd314;
-    --header-bg: #053b06;
+    --header-bg: #0b5d1e;
     --bg-color1: rgba(0, 0, 0, 0.6);
     --bg-color2: #bf9c00;
     --bg-color3: rgba(5, 34, 1, .5);
@@ -45,6 +45,7 @@ body {
 
 .logo {
     margin-left: 12rem;
+    height: 6rem;
 }
 
 #nav-bar {
@@ -122,9 +123,11 @@ iframe {
 
 }
 
-/* .tag1 {
-    color: var(--text-color2);
-} */
+.tag1 {
+    margin: 1.45rem 0;
+    align-self: flex-start;
+    padding-left: 1.65rem;
+}
 
 .tag2 {
     align-self: center;
@@ -136,7 +139,8 @@ iframe {
 
 .tag3 {
     align-self: flex-end;
-    padding-bottom: 15px;
+    padding: 0 1.65rem 15px 0;
+    margin: 1.45rem 0;
 
 }
 
@@ -154,27 +158,22 @@ form {
     align-self: center;
 }
 
-form,
-.tagline {
-    width: 350px;
-}
 
 .input-group {
     display: flex;
-
 }
 
 input[type="email"] {
-    width: 250px;
-    height: 60px;
-    border-radius: 10px 0 0 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
     border: 0;
     text-align: center;
 
 }
 
 input[type="submit"] {
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 5px 5px 0;
     width: 125px;
     background-color: var(--btn-color);
     color: var(--text-color2);
@@ -297,6 +296,7 @@ footer {
 
     .logo {
         margin-left: 0;
+        margin-left: 2px;
     }
 
     #nav-bar {
