@@ -1,164 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Lora Saranillo">
-    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
 
-    <!-- bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Eatfully by Pats</title>
+</head>
 
-    <link rel="stylesheet" href="css/style.css">
+<body>
+    <header id="header">
+        <img src="https://i.imgur.com/MV4F8t7.png" alt="" id="header-img" id="logo">
 
-    <title>Personal Portfolio Webpage</title>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#Salads" class="nav-link">Salads</a></li>
+                <li><a href="#Pastas" class="nav-link">Pastas</a></li>
+                <li><a href="#Wraps" class="nav-link">Wraps</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="container email-video">
 
-    <body>
-        <header>
-            <nav id="navbar" class="navbar navbar-expand-sm navbar-dark fixed-top min-vw-100 ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">LS</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse nav " id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link " aria-current="page" href="#welcome-section">About</a>
-                            <a class="nav-link" href="#projects">Work</a>
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main>
+            <section class="email-section">
+                <p class="tagline tag1">Good Food</p>
+                <p class="tagline tag2">will help set you in a</p>
+                <p class="tagline tag3">Good Mood</p>
 
-            <section id="welcome-section">
-                <div
-                    class="container d-flex flex-column justify-content-center align-content-center min-vh-100 text-center">
-                    <h1 class="display-4 col-4 align-self-start offset-xxl-1 hello">Hello!</h1>
-                    <h2 class="display-4 myName">I am Lora</h2>
-                    <p class="h2 myTitle">&#60; a web developer &#62;</p>
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
 
-                </div>
+                    <section class="input-group">
+                        <input type="email" name="email" id="email" placeholder="Type your username@email.com" required>
+
+                        <input type="submit" value="Get Started" id="submit">
+                    </section>
+                </form>
+
             </section>
 
-            <section id="projects">
-                <div id="project-tile"
-                    class="project-tile container d-flex flex-column justify-content-center align-content-center min-vh-100 text-center">
-                    <h3 class="display-6">A few of my projects...</h3>
-
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                                aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a
-                                    href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-product-landing-page-project/build-a-product-landing-page">
-                                    <img src="https://i.imgur.com/bD3EUBX.png" class="d-block w-100" alt="..."></a>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Product Landing Page</h5>
-                                    <!-- <p>Some representative placeholder content for the first slide.</p> -->
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <a
-                                    href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-tribute-page-project/build-a-tribute-page">
-                                    <img src="https://i.imgur.com/nSN9YCF.png" class="d-block w-100" alt="..."></a>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Tribute Page</h5>
-                                    <!-- <p>Some representative placeholder content for the second slide.</p> -->
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="https://codepen.io/eiramarol/pen/vYREdbz">
-                                    <img src="https://i.imgur.com/8DBWzgJ.jpg" class="d-block w-100" alt="..."></a>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Technical Documentation</h5>
-                                    <!-- <p>Some representative placeholder content for the third slide.</p> -->
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="https://eiramarol.github.io/MuseumOfCandy/">
-                                    <img src="https://i.imgur.com/WPCEoRp.jpg" class="d-block w-100" alt="..."></a>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Museum of Candy</h5>
-                                    <!-- <p>Some representative placeholder content for the second slide.</p> -->
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
+            <section class="video-section">
+                <iframe id="video"
+                    src="https://player.vimeo.com/video/732281240?h=4476382fd8&title=0&byline=0&portrait=0"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             </section>
 
-            <section id="contact">
-                <div
-                    class="container d-flex flex-column justify-content-center align-content-center min-vh-100 text-center">
+        </div>
+        <div class="container">
 
-                    <h3 class="h3">Got a project where you need some help?</h3>
-                    <div class="d-flex flex-row align-self-center justify-content-center">
+            <section id="Salads" class="product-section">
+                <div class="title-img">
+                    <h2 class="section-title">Salads</h2>
 
-                        <div class="col-xl-4">
-
-                            <a id="profile-link" class="btn btn-link socials" role="button" href="#" target="_blank"><i
-                                    class="fa-brands fa-github"></i>&nbsp;Github</a>
-                        </div>
-
-                        <div class="col-xl-4">
-                            <a class="btn btn-link socials" role="button" href="#" target="_blank"><i
-                                    class="fa-brands fa-facebook-messenger"></i>&nbsp;Messenger</a>
-                        </div>
-
-                        <div class="col-xl-4">
-                            <a class="btn btn-link socials" role="button" href="#" target="_blank"><i
-                                    class="fa-brands fa-discord"></i>&nbsp;Discord</a>
-                        </div>
-
-                        <div class="col-xl-4">
-                            <a class="btn btn-link socials" role="button" href="#" target="_blank"><i
-                                    class="fa-solid fa-at"></i>&nbsp;Email</a>
-                        </div>
-                    </div>
-
+                    <img src="https://i.imgur.com/92LcF2F.jpg" alt="plate of salad">
                 </div>
-                <footer class="fixed-bottom">
-                    <hr id="hr" class="border border-2 opacity-20">
-                    <div class="d-flex flex-row align-items-xxl-baseline justify-content-center align-middle">
-                        <i class="fa-regular fa-copyright"></i>&nbsp;Loras. 2022 - 2023. All Rights Reserved.
-                    </div>
-                </footer>
+                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+                    laudantium eum beatae rem sint aspernatur dolore odio facilis quae ut excepturi voluptas, illo quod!
+                    Eos
+                    voluptas reprehenderit nobis nam dolores.</p>
             </section>
 
-        </main>
+            <section id="Pastas" class="product-section">
+                <div class="title-img">
 
-        <script src="https://kit.fontawesome.com/e77b9f2df4.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-            crossorigin="anonymous"></script>
-    </body>
+                    <h2 class="section-title">Pastas</h2>
+
+                    <img src="https://i.imgur.com/csEadsy.jpg" alt="plate of shrimp pasta">
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, obcaecati
+                    culpa. Dicta quaerat, iure impedit aliquid facere odio praesentium labore? Vel tenetur, fuga quia
+                    veniam
+                    minima facilis iusto fugit asperiores.</p>
+            </section>
+
+            <section id="Wraps" class="product-section">
+                <div class="title-img">
+
+                    <h2 class="section-title">Chicken Wrap</h2>
+
+                    <img src="https://i.imgur.com/6KSrLK5.jpg" alt="plat of chicken wrap">
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut aliquid
+                    earum tenetur laudantium obcaecati hic ea sunt dolorem labore aspernatur, incidunt et voluptates
+                    perspiciatis praesentium rerum odio iste alias. </p>
+            </section>
+        </div>
+        <footer>
+            <ul class="footer-container">
+                <li><a href="https://product-landing-page.freecodecamp.rocks/#" class="footer-link">Privacy</a></li>
+                <li><a href="https://product-landing-page.freecodecamp.rocks/#" class="footer-link">Terms</a></li>
+                <li><a href="https://product-landing-page.freecodecamp.rocks/#" class="footer-link">Contact</a></li>
+            </ul>
+            <span class="copyright">&copy;Copyright 2022. All rights reserved. Eatfully by Pats</span>
+        </footer>
+    </main>
+</body>
 
 </html>
+
+!
