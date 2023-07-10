@@ -64,8 +64,12 @@ body {
     background-color: var(--bg-col2);
     transition: background 550ms;
 }
-.candycane{
+
+.candycane {
     transform: rotate(-20deg);
+    height: 2.65rem;
+    position: relative;
+    bottom: .38rem;
 }
 
 @media (max-width:1300px) {
