@@ -82,6 +82,6 @@ body {
 
 @media (max-width:420px) {
     #mainNavbar{
-        margin-left: 0;
+        margin: 0 1rem;
     }
 }
