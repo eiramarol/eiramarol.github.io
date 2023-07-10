@@ -34,6 +34,7 @@ body {
     color: var(--txt-col2);
     font-size: 1.5rem;
     font-weight: 300;
+    margin-left: 2.25rem;
 }
 
 #mainNavbar {
