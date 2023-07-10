@@ -64,6 +64,9 @@ body {
     background-color: var(--bg-col2);
     transition: background 550ms;
 }
+.candycane{
+    transform: rotate(10deg);
+}
 
 @media (max-width:1300px) {
     #headingGroup h1 {
