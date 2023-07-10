@@ -83,7 +83,7 @@ body {
 
 @media (min-width:300px) and (max-width:450px) {
     #mainNavbar{
-        padding: 0 1rem;
+        padding: 1rem;
     }
     #mainNavbar .navbar-brand {
         margin:0;
