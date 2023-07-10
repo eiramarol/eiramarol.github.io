@@ -65,7 +65,7 @@ body {
     transition: background 550ms;
 }
 .candycane{
-    transform: rotate(10deg);
+    transform: rotate(-20deg);
 }
 
 @media (max-width:1300px) {
