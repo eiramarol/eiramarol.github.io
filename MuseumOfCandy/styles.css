@@ -85,4 +85,7 @@ body {
     #mainNavbar{
         margin: 0 1rem;
     }
+    #mainNavbar .navbar-brand {
+        margin:0;
+    }
 }
