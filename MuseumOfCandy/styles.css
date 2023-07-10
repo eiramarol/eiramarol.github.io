@@ -81,8 +81,8 @@ body {
     
 }
 
-@media (max-width:420px) {
+@media (min-width:300px) and (max-width:450px) {
     #mainNavbar{
-        margin: 0 1.25rem;
+        margin: 0 1rem;
     }
 }
