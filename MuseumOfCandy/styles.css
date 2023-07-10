@@ -77,4 +77,11 @@ body {
         font-weight: 100;
         font-size: 3rem;
     }
+    
+}
+
+@media (max-width:420px) {
+    #mainNavbar{
+        margin-left: 0;
+    }
 }
