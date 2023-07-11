@@ -109,12 +109,12 @@ h3.display-6 {
 .navbar-brand,
 .myName {
     font-family: 'Press Start 2P', cursive;
-    color: var(--bg-color1);
+    color: var(--btn-color);
 
 }
 
 .navbar-brand {
-    color: var(--btn-color1);
+    color: var(--bg-color1);
 }
 
 .myTitle {
