@@ -1,0 +1,56 @@
+* {
+    background-color: #2b2d42;
+
+}
+
+.flex-container {
+    display: flex;
+    background-color: rgba(202, 204, 195, 0.3);
+    justify-content: center;
+    min-width: 400px;
+
+}
+
+figcaption {
+    text-align: center;
+    color: #ccc5b9;
+    font-family: Helvetica, Sans-serif;
+
+
+}
+
+#img-div {
+    min-width: 400px;
+    max-width: 600px;
+
+
+}
+
+#img-div img {
+    max-width: 100%;
+    height: auto;
+    /* border-radius:2%; */
+    display: block;
+
+}
+
+header {
+    text-align: center;
+    color: #ccc5b9;
+}
+
+p {
+    color: #fffcf2;
+    font-family: arial light, San-serif;
+    text-align: justify;
+}
+
+p a {
+    color: #eb5e28;
+
+
+}
+
+section {
+    padding: 5px auto 10px auto;
+}
