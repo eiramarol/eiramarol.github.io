@@ -100,7 +100,7 @@ h3.display-6 {
 .container-fluid,
 .navbar-collapse,   
 .navbar-nav,
-/* .nav-link, */
+.nav-link,
 .navbar-brand,
 .navbar-toggler-icon {
     background-color: var(--bg-color2);
