@@ -88,7 +88,7 @@ h3.display-6 {
 }
 
 .nav-link {
-    color: var(--txt-color);
+    color: var(--bg-color3);
 }
 
 .navbar,
@@ -114,7 +114,7 @@ h3.display-6 {
 }
 
 .navbar-brand {
-    color: var(--bg-color1);
+    color: var(--btn-color1);
 }
 
 .myTitle {
@@ -142,7 +142,7 @@ h3.display-6 {
 
 @media (hover: hover) {
     .nav-link:hover {
-        color: var(--bg-color1);
+        color: var(--bg-color3);
         text-decoration: wavy underline;
         font-weight: 900;
 
