@@ -88,7 +88,7 @@ h3.display-6 {
 }
 
 .nav-link {
-    color: var(--bg-color3);
+    color: var(--bg-color1);
 }
 
 .navbar,
@@ -98,9 +98,9 @@ h3.display-6 {
 
 #navbar,
 .container-fluid,
-.navbar-collapse,
+.navbar-collapse,   
 .navbar-nav,
-.nav-link,
+/* .nav-link, */
 .navbar-brand,
 .navbar-toggler-icon {
     background-color: var(--bg-color2);
@@ -109,7 +109,7 @@ h3.display-6 {
 .navbar-brand,
 .myName {
     font-family: 'Press Start 2P', cursive;
-    color: var(--btn-color);
+    color: var(--bg-color1);
 
 }
 
