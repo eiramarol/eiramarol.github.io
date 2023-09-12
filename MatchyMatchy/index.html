@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Lora Saranillo">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Matchy Matchy!</title>
+</head>
+
+<body>
+	<div class="board">
+		<figure class="cards">
+		</figure>
+		<button type="reset">Reset</button>
+	</div>
+	<script>
+
+		var firstImage;
+		var secondImage;
+
+		var images = ["img/pic0.png", "img/pic1.png", "img/pic2.png", "img/pic3.png", "img/pic4.png", "img/pic5.png"];
+		images = images.concat(images);
+		var newImg = "";
+		console.log(images.length);
+		for (var i = 0; i < 12; i++) {
+
+			var randomIndex = Math.floor(Math.random() * 2);
+			newImg = randomIndex === 1 ? images.shift() : images.pop();
+			console.log(newImg);
+			var img = $("<img>");
+
+			img.attr("src", "img/higgledy.gif");
+			img.attr("data-alt-src", newImg);
+			img.attr("alt", "dancing higgledy");
+
+			$(".cards").append(img);
+
+		}
+		console.log(images);
+		$("img").click(function () {
+			var origSrc = "img/higgledy.gif"
+			var altSrc = $(this).attr("data-alt-src");
+			var curSrc = $(this).attr("src");
+			// $(this).attr('src', curSrc === origSrc ? altSrc : origSrc);
+			$(this).attr('src', curSrc === origSrc ? altSrc : firstImage.attr("src") === secondImage.attr("src") ? altSrc: origSrc );
+
+			if (firstImage === undefined ) {
+				firstImage = $(this);
+				// $(this).attr('src', curSrc === origSrc ? altSrc : origSrc);
+
+			} else {
+				secondImage = $(this);
+
+				if (firstImage.attr("src") !== secondImage.attr("src")) {
+					// console.log(firstImage.attr("src") + " ≠ " + secondImage.attr("src"));
+					// console.log(firstImage);
+					// If the two clicked images are different, reset them after a delay
+					setTimeout(function () {
+						firstImage.attr("src", origSrc);
+						secondImage.attr("src", origSrc);
+						firstImage = undefined;
+					}, 500);
+
+				} else {
+					// console.log(firstImage.attr("src") + " = " + secondImage.attr("src"));
+					// If the same image is clicked again, reset the firstImage
+					event.preventDefault();
+					firstImage = undefined;
+					secondImage = undefined;
+				}
+			}
+		});
+
+		// reset button
+		$("button").click(function () {
+			// $("img").attr("src", "img/higgledy.gif");
+			window.location.href = window.location.href;
+		});
+	</script>
+</body>
+
+</html>

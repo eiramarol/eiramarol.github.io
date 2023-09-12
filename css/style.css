@@ -66,16 +66,13 @@ footer {
 }
 
 
-#projects,
-#project-tile,
-h3.display-6 {
-    background-color: var(--bg-color3);
+#projects{
+
+}
+#project-tile {
+    /* background-color: #FFFFFF4D; */
 }
 
-p.display-6,
-h3.display-6 {
-    color: var(--bg-color1);
-}
 
 .carousel-caption {
     color: var(--txt-color);
