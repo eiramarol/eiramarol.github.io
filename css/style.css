@@ -1,11 +1,49 @@
 :root {
-    --txt-color: #f8f7f7;
+    /* primary */
+    /* --txt-color: #f8f7f7;
     --bg-color1: #0D1137;
     --bg-color2: #E52165;
     --bg-color3: #ffe1ea;
-    --btn-color: #e78dbb;
+    --btn-color: #e78dbb; */
+
+    /* secondary color */
+    /* --txt-color: #f8f7f7;
+    --bg-color1: #0D1137;
+    --bg-color2: #E52165;
+    --bg-color3: #ffe1ea;
+    --btn-color: #e78dbb; */
 
 
+    /* Palette 1:  */
+    /* --bg-color: #FF9526; 
+    --bg-color: #EF4423; 
+    --bg-color: #2A3492; 
+    --bg-color: #4FAF44; 
+    --bg-color: #F6EB14; */
+    /* Palette 2:  */
+    --txt-color: #98D8BD; 
+    --bg-color1: #363B39;
+    --bg-color2: #87CE8A; 
+    --bg-color3: #FDCE9F; 
+    --btn-color: #FF7A72; 
+    /* Palette 3:  */
+    /* --bg-color: #688B99; 
+    --bg-color: #9A4CAF; 
+    --bg-color: #DB2832; 
+    --bg-color: #5C6B7F; 
+    --bg-color: #D57248; */
+    /* Palette 4:  */
+    /* --bg-color: #F0F0F0; 
+    --bg-color: #7F7F7F; 
+    --bg-color: #313131; 
+    --bg-color: #92690D; 
+    --bg-color: #000000; */
+    /* Palette 5:  */
+    /* --bg-color: #FF2244; 
+    --bg-color: #00CC66; 
+    --bg-color: #228B22; 
+    --bg-color: #66CDAA; 
+    --bg-color: #99CC33; */
 }
 
 * {
@@ -28,16 +66,13 @@ footer {
 }
 
 
-#projects,
-#project-tile,
-h3.display-6 {
-    background-color: var(--bg-color3);
+#projects{
+
+}
+#project-tile {
+    /* background-color: #FFFFFF4D; */
 }
 
-p.display-6,
-h3.display-6 {
-    color: var(--bg-color1);
-}
 
 .carousel-caption {
     color: var(--txt-color);
@@ -50,7 +85,7 @@ h3.display-6 {
 }
 
 .nav-link {
-    color: var(--txt-color);
+    color: var(--bg-color3);
 }
 
 .navbar,
@@ -58,15 +93,15 @@ h3.display-6 {
     color: var(--txt-color);
 }
 
-#navbar,
+/* #navbar,
 .container-fluid,
-.navbar-collapse,
+.navbar-collapse,   
 .navbar-nav,
 .nav-link,
 .navbar-brand,
 .navbar-toggler-icon {
     background-color: var(--bg-color2);
-}
+} */
 
 .navbar-brand,
 .myName {
@@ -76,7 +111,7 @@ h3.display-6 {
 }
 
 .navbar-brand {
-    color: var(--bg-color1);
+    color: var(--btn-color);
 }
 
 .myTitle {
@@ -90,7 +125,7 @@ h3.display-6 {
 }
 
 .btn.btn-link.socials:hover {
-    color: var(--txt-color);
+    color: var(--bg-color3);
     text-shadow: 0px 5px 6px var(--bg-color2), 0px -2px 5px var(--bg-color3);
 }
 
@@ -104,7 +139,7 @@ h3.display-6 {
 
 @media (hover: hover) {
     .nav-link:hover {
-        color: var(--bg-color1);
+        color: var(--bg-color3);
         text-decoration: wavy underline;
         font-weight: 900;
 

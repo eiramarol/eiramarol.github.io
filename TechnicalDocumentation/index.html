@@ -1,0 +1,985 @@
+<!--https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+    <title>JS Documentation</title>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <!-- <div class="ruler"></div> -->
+        <header>HPE MegaRAID Storage Controllers</header>
+
+        <ul class="nav-list">
+            <li><a class="nav-link" href="#Overview">Overview</a></li>
+            <li><a class="nav-link" href="#Standard_Features">Standard Features</a></li>
+            <li><a class="nav-link" href="#Related_Options">Related Options</a></li>
+            <li><a class="nav-link" href="#Service_and_Support">Service and Support</a></li>
+            <li><a class="nav-link" href="#Summary_of_Changes">Summary of Changes</a></li>
+            <li><a class="nav-link" href="#Copyright">Copyright</a></li>
+        </ul>
+        <div class="ruler"></div>
+
+    </nav>
+
+
+    <main id="main-doc">
+        <div class="main-doc-sec-space"></div>
+        <section class="main-section" id="Overview">
+            <header>
+                <h3>Overview</h3>
+            </header>
+            <article>
+                <h4>HPE MR Gen10 Plus Storage Controllers</h4>
+                <section>
+
+                    <h5 class="headings">A versatile, simplified and flexible choice for data centers</h5>
+                    <p>
+                        HPE introduces an expansive and agile PCIe Gen 4.0 storage controller portfolio based on
+                        Broadcom(R)
+                        MegaRAID(R) technology delivering quality, performance and security for mission-critical
+                        applications.
+                    </p>
+                </section>
+
+                <section>
+                    <p class="headings">Accelerate performance of NVMe and SAS SSD’s while minimizing power consumption
+                    </p>
+                    <ul>
+                        <li>
+                            HPE MR Gen10 Plus Storage controllers offer up to 13,700 MBs of bandwidth, 3M Random Read
+                            IOPs,
+                            and 240K RAID5 Random Write IOPs; more than double previous Broadcom(R) MegaRAID(R)
+                            generations.
+                        </li>
+                        <li>
+                            Support for PCIe Gen 4.0 enables these adapters for high bandwidth by delivering twice the
+                            bandwidth and 75% more IOPs.
+                        </li>
+                        <li>
+                            Support up to 16 internal ports providing high IOPS performance and data protection.
+                        </li>
+                        <li>
+                            Provide low power consumption equating to power savings for any data center environment.
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h5 class="headings">Hardware root of trust and secure encryption and decryption of critical drive
+                        data
+                    </h5>
+                    <ul>
+                        <li>
+                            The HPE MR Gen10 Plus Storage Controller portfolio provides confidence in the security and
+                            data protection offered with hardware secure boot, as well as self-encrypting drives
+                            support.
+                        </li>
+                        <li>
+                            HPE MR Gen10 Plus Storage Controllers manage SEDs attached to the RAID controller for higher
+                            levels of security of Data at Rest (DAR).
+                        </li>
+                        <li>
+                            SEDs constantly perform encryption and decryption of all drive contents, and the ability to
+                            lock a drive so that its
+                            contents remain safely beyond the reach of hackers and thieves is crucial.
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h5 class="headings">Jobs to be done</h5>
+                    <ul>
+                        <li>
+                            HPE MR416i-a / HPE MR416i-p Gen10 Plus Storage Controllers are ideal for all data center
+                            environments where RAID is applicable offering reduced rebuild times, high-bandwidth and
+                            240K
+                            RAID5 Random Write IOPs
+                        </li>
+                        <li>
+                            HPE MR416i-a / HPE MR416i-p Gen10 Plus Storage Controllers are ideal for all virtualized
+                            environments where HBA / Pass-through mode is applicable offering high-bandwidth and 3M
+                            Random
+                            Write IOPs
+                        </li>
+                    </ul>
+                    <p>
+                        HPE has enabled customers to go further, faster with the latest generation of Broadcom(R)
+                        Tri-Mode
+                        Controllers
+                        supporting PCIe Gen 4.0, Tri-Mode, and SED while enhancing SAS and NVMe RAID performance. The
+                        HPE MR
+                        Gen10 Plus Storage Controllers
+                        use a new, user-friendly web-based interface called MR Storage Administrator (MRSA) that makes
+                        it
+                        easy to configure,
+                        monitor, maintain, and troubleshoot.
+                    </p>
+                    <p>
+                        For those customers familiar with MegaRAID(R) technology the MR Controllers use CLI Management
+                        Tool
+                        called StorCLI.
+                    </p>
+                    <p class="blue-notes">
+                        <span class="bold">Notes: </span>MR Storage Administrator and StorCLI can only be used on HPE MR
+                        Gen10 Plus Storage Controllers.
+                    </p>
+                </section>
+
+                <div class="ruler"></div>
+
+                <section>
+                    <h5 class="headings">Models</h5>
+                    <p class="model-p">HPE MR416i-a Gen10 Plus 4GB 72b Cache Storage Controller</p>
+                    <p class="model-p">HPE MR416i-p Gen10 Plus 4GB 72b Cache Storage Controller</p>
+                    <p class="model-p">HPE MR216i-a Gen10 Plus 4GB 72b Cache Storage Controller</p>
+                    <p class="model-p">HPE MR216i-p Gen10 Plus 4GB 72b Cache Storage Controller</p>
+                    <p class="blue-notes"> <span class="bold">Notes: </span>An HPE Smart Storage energy pack (available
+                        in
+                        both battery and hybrid capacitor options) is required with the
+                        HPE
+                        MR416i-a and HPE MR416i-p storage controller. See below for energy pack options.</p>
+                    <div class="ruler"></div>
+                </section>
+
+                <section>
+                    <h5 class="headings">Compatibility</h5>
+                    <table id="compatibility-tbl">
+                        <tr>
+                            <th class="table-description">SKU</th>
+                            <td>P26279-B21</td>
+                            <td>P06367-B21</td>
+                            <td>P26325-B21</td>
+                            <td>P26324-B21</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description">Description</th>
+                            <td>HPE MR416i-a Gen10+ Storage Cntlr</td>
+                            <td>HPE MR416i-p Gen10+ Storage Cntlr</td>
+                            <td>HPE MR216i-a Gen10+ Storage Cntlr</td>
+                            <td>HPE MR216i-p Gen10+ Storage Cntlr</td>
+                        </tr>
+                        <tr>
+                            <td class="table-description">ProLiant DL360 Gen10 Plus</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                        </tr>
+                        <tr>
+                            <td class="table-description">ProLiant DL380 Gen10 Plus</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                        </tr>
+                        <tr>
+                            <td class="table-description">ProLiant DL325 Gen10 Plus v2</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                        </tr>
+                        <tr>
+                            <td class="table-description">ProLiant DL345 Gen10 Plus</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                        </tr>
+                        <tr>
+                            <td class="table-description">ProLiant DL365 Gen10 Plus</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                        </tr>
+                        <tr>
+                            <td class="table-description">ProLiant DL385 Gen10 Plus v2</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                            <td class="checks">&#10004;</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <div class="ruler"></div>
+
+
+                <section>
+                    <h5 class="headings">Operating System Support</h5>
+                    <ul>
+                        <li><a href="http://h17007.www1.hpe.com/us/en/enterprise/servers/supportmatrix/windows.aspx">Microsoft
+                                Windows Server</a></li>
+                        <li><a
+                                href="http://h17007.www1.hpe.com/us/en/enterprise/servers/supportmatrix/redhat_linux.aspx">Red
+                                Hat Enterprise Linux (RHEL)</a></li>
+                        <li><a href="http://h17007.www1.hpe.com/us/en/enterprise/servers/supportmatrix/suse_linux.aspx">SUSE
+                                Linux Enterprise Server (SLES)</a></li>
+                        <li><a href="http://h17007.www1.hpe.com/us/en/enterprise/servers/supportmatrix/vmware.aspx">VMware
+                                ESXi</a></li>
+                        <li><a href="http://h17007.www1.hpe.com/us/en/enterprise/servers/supportmatrix/ubuntu.aspx">Canonical
+                                Ubuntu</a></li>
+                        <li><a
+                                href="http://h17007.www1.hpe.com/us/en/enterprise/servers/supportmatrix/cent_os.aspx">CentOS</a>
+                        </li>
+                    </ul>
+                    <p class="blue-notes"><span class="bold">Notes: </span>HPE MR Gen10 Plus Storage Controllers are
+                        supported by the server
+                        operating system. For more information on HPE's server operating systems and virtualization
+                        software,
+                        please visit:<a href="http://www.hpe.com/info/ossupport">http://www.hpe.com/info/ossupport</a>
+                    </p>
+                </section>
+
+                <div class="ruler"></div>
+
+                <section>
+
+                    <h5 class="headings">Storage Management Software Suite </h5>
+                    <ul>
+                        <li>HPE MR Storage Administrator</li>
+                        <li>HPE StorCLI</li>
+                        <li>UEFI Systems Utilities (storage configuration)</li>
+                    </ul>
+                </section>
+
+                <div class="ruler"></div>
+
+                <section>
+
+                    <h5 class="headings">Additional Information</h5>
+                    <p> <span class="bold">HPE MR Gen10 Plus Storage Controllers</span> For additional information on
+                        the
+                        features for HPE MegaRAID MR Gen10 Plus
+                        Controllers, please see the HPE MR Gen10 Plus Controller User Guide</p>
+                </section>
+                <div class="ruler"></div>
+
+            </article>
+
+        </section>
+
+        <section class="main-section" id="Standard_Features">
+            <header>
+                <h3>Standard Features</h3>
+            </header>
+            <article>
+                <h4>GUI Management Tool</h4>
+                <section>
+                    <h5 class="headings MR">MR Storage Administrator</h5>
+                    <p>The MR Storage Administrator is a web-based application that enables you to monitor, maintain,
+                        troubleshoot, and
+                        configure
+                        MegaRAID (MR) storage controllers. The MR Storage Administrator graphical user interface (GUI)
+                        helps
+                        you to view,
+                        create, and
+                        manage storage configurations.</p>
+                    <ul>
+                        <li><span class="bold">Monitoring and Configuring:</span> MR Storage Administrator enables you
+                            to
+                            monitor the controllers and configure the
+                            drives on the controller. It displays the status of the controller cards, logical drives,
+                            and
+                            drives on the controller.
+                            The
+                            device status icons are displayed on their respective pages to notify you in case of drive
+                            failures and other events
+                            that
+                            require your immediate attention. Real-time email notifications on the status of the server
+                            are
+                            sent based on your alert
+                            settings. The system errors and events are recorded and displayed in an event log file.
+                            Additionally, you can also
+                            import
+                            or clear foreign configurations.</li>
+                        <li><span class="bold">Maintaining:</span> Using MR Storage Administrator, you can perform
+                            system
+                            maintenance tasks, such as updating the
+                            controller firmware</li>
+                        <li><span class="bold">Troubleshooting:</span> MR Storage Administrator displays information
+                            related
+                            to drive failures, device failures, and so on. It
+                            also provides recommendations and displays contextual links, helping you to easily locate
+                            the
+                            drives/devices that have
+                            issues and troubleshoot them. You can also download a complete report of the all the devices
+                            and
+                            their configurations,
+                            properties, and settings and send it to the Support Teams for further troubleshooting.</li>
+                    </ul>
+                    <p>Please refer to the <a
+                            href="https://www.hpe.com/support/MRSA">https://www.hpe.com/support/MRSA</a>
+                        for more detailed information.</p>
+                    <p class="blue-notes"><span class="bold">Notes:</span> The HPE MR storage controller is managed
+                        through
+                        the HPE MR Storage Administrator only.</p>
+
+                </section>
+                <div class="ruler"></div>
+
+                <section>
+                    <h5 class="headings">CLI Management Tool</h5>
+                    <p>The Storage Command Line Interface (StorCLI) tool is the command line management software
+                        designed
+                        for the MegaRAID
+                        product line. The StorCLI tool is a command line interface that is designed to be easy to use,
+                        consistent, and easy to
+                        script. This
+                        chapter provides information on how to install and use the StorCLI tool and explains the various
+                        features of the StorCLI
+                        tool.
+                        Please refer to the <a
+                            href="https://support.hpe.com/hpsc/doc/public/display?docId=a00048288en_us">
+                            <span class="bold underlined">StorCLI User Guide</span></a> for more detailed information.
+                        <a href="https://www.hpe.com/support/StorCLI">https://www.hpe.com/support/StorCLI</a>
+                    </p>
+
+                    <div class="ruler"></div>
+
+                    <table id="CLI-table"><span class="bold">Know your choices when it comes to HPE ProLiant and data
+                            storage</span>
+                        <tr>
+                            <th></th>
+                            <th class="table-description">HPE MR Gen10 Plus Storage Controllers</th>
+                            <th class="table-description">HPE SR Gen10 Plus Storage Controllers</th>
+                        </tr>
+                        <tr>
+                            <th class="table-description">Type</th>
+                            <td>MegaRAID</td>
+                            <td>SmartRAID</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description">GUI Management Tool</th>
+                            <td><span class="bold">&#10004;</span> MR Storage Administrator</td>
+                            <td><span class="bold">&#10004;</span> Smart Storage Administrator</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description">CLI Management Tool</th>
+                            <td><span class="bold">&#10004;</span> StorCLI</td>
+                            <td><span class="bold">&#10004;</span>SSACLI</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <div class="ruler"></div>
+
+                <section>
+                    <h5 class="headings">Key Features</h5>
+                    <ul>
+                        <li>High performance including up to 13,700 MB’s of bandwidth, 3M Random Read IOPs, and 240K
+                            RAID5
+                            Random Write</li>
+                        <li>Tri-Mode Storage Interface that supports NVMe4/SAS3/SATA
+                        <li>2x8 SlimSAS</li>
+                        <li>16Gb/s PCIe 12Gb/s SAS, 6Gb/s SATA technology</li>
+                        <li>Mix-and-match SAS, SATA, and NVMe drives to the same controller</li>
+                        </li>
+                        <li>HW based Root of Trust for Firmware Authentication</li>
+                        <li>Self-Encrypting Drives to ensure protection for data at rest and the prevention of malware.
+                        </li>
+                        <li>Support for all major OS’s including but not limited to Windows, Linux, and VMWare. Full
+                            tool
+                            suite including
+                            Command</li>
+                        <li>Line Interface, Web Based Management, and Out of Band Management support.</li>
+                        <li>Mixed Mode (RAID volumes and HBA physical drives simultaneously)</li>
+                        <li>UEFI System Utilities (storage configuration)</li>
+                        <li>Up to 240 physical drives</li>
+                        <li>Up to 16 NVMe devices</li>
+                        <li>FASTPATH(R) (SSD acceleration)</li>
+                        <li>Online firmware updates</li>
+                    </ul>
+                    <p class="blue-notes"><span class="bold">Notes:</span> HPE MR Gen10 Plus Storage Controllers do not
+                        support the same software or features as the HPE SR Gen10 Plus
+                        Storage Controllers such as HPE SSA and SR Secure Encryption.</p>
+
+                    <div class="ruler"></div>
+
+                    <table id="standard-feats-tbl1">
+                        <tr>
+                            <th class="table-description">Description</th>
+                            <th class="table-description">HPE MR416i-a Gen10+ Storage Cntlr</th>
+                            <th class="table-description">HPE MR416i-p Gen10+ Storage Cntlr</th>
+                            <th class="table-description">HPE MR216i-a Gen10+ Storage Cntlr</th>
+                            <th class="table-description">HPE MR216i-p Gen10+ Storage Cntlr</th>
+                        </tr>
+                        <tr>
+                            <th class="table-description">SKU</th>
+                            <td class="bold">P26279-B21</td>
+                            <td class="bold">P06367-B21</td>
+                            <td class="bold">P26325-B21</td>
+                            <td class="bold">P26324-B21</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description">Ports</th>
+                            <td>x16 internal tri-mode</td>
+                            <td>x16 internal tri-mode</td>
+                            <td>x16 internal tri-mode</td>
+                            <td>x16 internal tri-mode</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description no-bold">Internal SAS lanes</th>
+                            <td colspan="4">x16</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description no-bold">RAID on Chip Controller</th>
+                            <td colspan="4">SAS3916 - Broadcom(R) Aero</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description" colspan="5">Form Factor</th>
+                        </tr>
+                        <tr>
+                            <th class="table-description no-bold">Type-a Modular Controller</th>
+                            <td class="checks">&#10004;</td>
+                            <td class="grays"></td>
+                            <td class="checks">&#10004;</td>
+                            <td class="grays"></td>
+                        </tr>
+                        <tr>
+                            <th class="table-description no-bold">PCIe plug-in Controller</th>
+                            <td class="grays"></td>
+                            <td class="checks">&#10004</td>
+                            <td class="grays"></td>
+                            <td class="checks">&#10004</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description">Host Interface</th>
+                            <td colspan="4">PCIe Gen4 x8 host</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description" colspan="5">Performance</th>
+                        </tr>
+                        <tr>
+                            <th class="table-description no-bold">Cache Size (FBWC)</th>
+                            <td>4GB</td>
+                            <td>4GB</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td class="blank-cells" colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <th class="table-description no-bold">Read Ahead Caching</th>
+                            <td class="checks">&#10004</td>
+                            <td class="checks">&#10004</td>
+                            <td class="checks">&#10004</td>
+                            <td class="checks">&#10004</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description no-bold">Write-back Caching</th>
+                            <td class="checks">&#10004</td>
+                            <td class="checks">&#10004</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th class="table-description">Storage Protocol</th>
+                            <td colspan="4">12Gbps SAS, 6GB/SATA, 16Gb/s PCIe</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th colspan="4"></th>
+                        </tr>
+                        <tr>
+                            <td class="table-description blank-cells" colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <th class="table-description">Key Features</th>
+                        </tr>
+                        <tr>
+                            <th class="table-description no-bold">Maximum Physical Drives (up to)</th>
+                            <td>240</td>
+                            <td>240</td>
+                            <td>240</td>
+                            <td>240</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description no-bold">Maximum Logical Drives (up to)</th>
+                            <td>64</td>
+                            <td>64</td>
+                            <td>64</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description">RAID:</th>
+                            <td>0, 1, 5, 6, 10, 50, 60</td>
+                            <td>0, 1, 5, 6, 10, 50, 60</td>
+                            <td>0, 1, 10</td>
+                            <td>0, 1, 10</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description">Mixed Mode: <span class="no-bold">(RAID & HBA)</span></th>
+                            <td class="checks">&#10004</td>
+                            <td class="checks">&#10004</td>
+                            <td class="checks">&#10004</td>
+                            <td class="checks">&#10004</td>
+                        </tr>
+
+                    </table>
+
+
+                    <table id="standard-feats-tbl2">
+                        <tr>
+                            <th class="table-description no-bold">Description</th>
+                            <th class="table-description">Broadcom MegaRAID MR416i-a x16 Lanes 4GB Cache
+                                NVMe/SAS 12G Controller for HPE Gen10 Plus</th>
+                            <th class="table-description">Broadcom MegaRAID MR416i-p x16 Lanes 4GB Cache NVMe/SAS 12G
+                                Controller for HPE Gen10 Plus</th>
+                            <th class="table-description">Broadcom MegaRAID MR216i-a x16 Lanes without
+                                Cache NVMe/SAS 12G Controller for HPE Gen10 Plus</th>
+                            <th class="table-description">Broadcom MegaRAID MR216i-p x16 Lanes without
+                                Cache NVMe/SAS 12G Controller for HPE Gen10 Plus</th>
+                        </tr>
+                        <tr>
+                            <th class="table-description">SKU</th>
+                            <td class="bold">P26279-B21</td>
+                            <td class="bold">P06367-B21</td>
+                            <td class="bold">P26325-B21</td>
+                            <td class="bold">P26324-B21</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description">Boot Mode: <span class="no-bold">Legacy and UEFI</span>
+                            </th>
+                            <td class="checks">&#10004</td>
+                            <td class="checks">&#10004</td>
+                            <td class="checks">&#10004</td>
+                            <td class="checks">&#10004</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description">SSD Accelerator</th>
+                            <td colspan="4">FASTPATH(R)</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description"></th>
+                            <td colspan="4" id="other-feat-td">
+                                <ul>
+                                    <li>Online Capacity Expansion (OCE)</li>
+                                    <li>Auto resume after loss of system power during array</li>
+                                    <li>rebuild</li>
+                                    <li>Load balancing</li>
+                                    <li>Configurable stripe size up to 1 MB</li>
+                                    <li>Fast initialization for quick array setup</li>
+                                    <li>Check consistency for background data integrity</li>
+                                    <li>SSD support with SSD Guard™ technology</li>
+                                    <li>Patrol read for media scanning and repairing</li>
+                                    <li>DDF compliant Configuration on Disk</li>
+                                    <li>S.M.A.R.T. support</li>
+                                    <li>Global and dedicated Hot Spare with Revertible Hot</li>
+                                    <li>Spare support:</li>
+                                    <ul>
+                                        <li class="dash-list">Automatic</li>
+                                        <li class="dash-list">rebuild</li>
+                                        <li class="dash-list">Enclosure</li>
+                                        <li class="dash-list">affinity</li>
+                                        <li class="dash-list">Emergency</li>
+                                    </ul>
+                                    <li>SATA hot spare for SAS arrays</li>
+                                    <li>Enclosure management:</li>
+                                    <ul>
+                                        <li class="dash-list">Universal Backplane Management (UBM)</li>
+                                    </ul>
+                                    <li>Shield state drive diagnostic technology</li>
+                                    <li>SED Key Management</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table-description">Array Configuration Features</th>
+                            <td colspan="4">
+                                <ul>
+                                    <li>Expand Array</li>
+                                    <li>Move Drives</li>
+                                    <li>Shrink Array</li>
+                                    <li>Spare Management</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table-description">Logical Drive Configuration Features</th>
+                            <td colspan="4">
+                                <ul>
+                                    <li>Extend Logical Drive</li>
+                                    <li>Instant Secure Erase</li>
+                                    <li>Migrate RAID/Stripe Size</li>
+                                    <li>Modifying Cache Write Policy</li>
+                                    <li>Move Logical Drive</li>
+                                    <li>Re-enable Failed Logical Drive</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table-description">HPE OneView Support</th>
+                            <td colspan="4">Monitored Mode</td>
+                        </tr>
+                        <tr>
+                            <th class="table-description">Kit contents</th>
+                            <td colspan="4">Includes controller, documentation information card, warranty statement, and
+                                backup power cable
+                                (MR416 only)</td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h5 class="headings">Warranty</h5>
+                    <p>The warranty for this device is 3 years parts only.</p>
+                </section>
+                <section>
+                    <h5 class="headings">Warranty Upgrade Options</h5>
+                    <ul>
+                        <li>Response - Upgrade on-site response from next business day to same day 4 hours.</li>
+                        <li>Coverage - Extend hours of coverage from 9 hours x 5 days to 24 hours x 7 days.</li>
+                        <li>Duration - Select duration of coverage for a period of 1, 3, or 5 years.</li>
+                    </ul>
+                    <p>Warranty upgrade options can come in the form of HPE Pointnext operational, which are sold at the
+                        HPE System level to
+                        which this product attaches.</p>
+                </section>
+
+                <div class="ruler"></div>
+
+                <section>
+                    <h5 class="headings">Fault Recovery</h5>
+                    <p>Minimizes downtime, reconstructs data, and facilitates a quick recovery from drive failure
+                        Recovery ROM: This feature protects the user from a firmware image corruption by storing a
+                        redundant copy of the
+                        firmware image. If the active firmware image becomes corrupt, the controller will use the
+                        redundant
+                        firmware image and continue operating. On-Line Spares: There is no limit to the number of spare
+                        drives that can be installed prior to drive failure. If a failure occurs, recovery begins with
+                        an On-Line Spare and data is reconstructed automatically. DRAM ECC detects and corrects data bit
+                        errors.</p>
+                </section>
+
+                <div class="ruler"></div>
+
+            </article>
+        </section>
+
+        <section class="main-section" id="Related_Options">
+            <header>
+                <h3>Related Options</h3>
+            </header>
+            <article>
+                <h4>Required Accessories for HPE MR416i-a / MR416i-p Gen10 Plus Storage Controllers
+                    Energy pack Options Sold Separately</h4>
+                <table id="related-options-tbl">
+                    <tr>
+                        <td>HPE 96W Smart Storage Lithium-ion Battery with 145mm Cable Kit</td>
+                        <td>P01366-B21</td>
+                    </tr>
+                    <tr>
+                        <td>HPE 96W Smart Storage Lithium-ion Battery with 260mm Cable Kit</td>
+                        <td>P01367-B21</td>
+                    </tr>
+                    <tr>
+                        <td>HPE Smart Storage Hybrid Capacitor with 145mm Cable Kit</td>
+                        <td>P02377-B21</td>
+                    </tr>
+                    <tr>
+                        <td>HPE Smart Storage Hybrid Capacitor with 260mm Cable Kit</td>
+                        <td>P02381-B21</td>
+                    </tr>
+                </table>
+                <ul class="blue-notes"><span class="bold">Notes:</span>
+                    <li class="dash-list">An HPE Smart Storage energy pack is required when using
+                        Cache based storage controllers.</li>
+                    <li class="dash-list">The Smart Storage 96W Battery supports multiple devices.
+                        See server QuickSpecs for compatibility.</li>
+                </ul>
+
+                <div class="ruler"></div>
+
+            </article>
+        </section>
+
+        <section class="main-section" id="Service_and_Support">
+            <header>
+                <h3>Service and Support</h3>
+            </header>
+            <article>
+                <section>
+                    <h4>HPE Pointnext - Service and Support</h4>
+                    <p><span class="bold">Get the most from your HPE Products.</span>
+                        Get the expertise you need at every step of your IT journey with
+                        <a href="https://www.hpe.com/us/en/services.html" class="bold"> HPE Pointnext
+                            Services.</a> We help you lower your risks and overall costs using automation and
+                        methodologies
+                        that have been tested and
+                        refined by HPE experts through thousands of deployments globally.
+                        HPE Pointnext <a href="https://www.hpe.com/us/en/services/consulting.html" class="bold">Advisory
+                            Services</a>,
+                        focus on your business
+                        outcomes and goals, partnering with you to design your transformation and build a roadmap tuned
+                        to
+                        your unique
+                        challenges. Our <a href="https://h20195.www2.hpe.com/v2/Getdocument.aspx?docname=a00059438enw"
+                            class="bold">Professional</a>
+                        and <a href="https://www.hpe.com/us/en/services/operational.html" class="bold">Operational
+                            Services</a> can be
+                        leveraged to
+                        speed up time-to-production, boost performance and accelerate your business. HPE Pointnext
+                        specializes in flawless
+                        and on-time implementation, on-budget execution, and creative configurations that get the most
+                        out
+                        of software and hardware alike.
+                    </p>
+                </section>
+                <section>
+                    <h4 id="Consume_IT_on_your_terms">Consume IT on your terms</h4>
+                    <p> <a href="https://www.hpe.com/GreenLake" class="bold">HPE GreenLake</a> brings the cloud
+                        experience directly to your apps and data wherever they are—the edge,
+                        colocations, or our data center. It delivers cloud services for on-premises IT infrastructure
+                        specifically
+                        tailored to your most demanding workloads. With a pay-per-use, scalable, point-and-click
+                        self-service
+                        experience that is managed for you, HPE GreenLake accelerates digital transformation in a
+                        distributed,
+                        edge-to-cloud world.</p>
+                    <ul>
+                        <li>Get faster time to market</li>
+                        <li>Save on TCO, align costs to business</li>
+                        <li>Scale quickly, meet unpredictable demand</li>
+                        <li>Simplify IT operations across your data centers and clouds</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Managed services to run your IT operations</h4>
+                    <p><a href="https://www.hpe.com/us/en/services/remote-infrastructure-monitoring.html">HPE GreenLake
+                            Management Services</a> provides services that monitor, operate, and optimize your
+                        infrastructure and
+                        applications, delivered consistently and globally to give you unified control and let you focus
+                        on innovation.</p>
+                </section>
+
+                <div class="ruler"></div>
+
+                <section>
+                    <h4>Recommended Services</h4>
+                    <p>
+                    <h3 class="headings">HPE Pointnext Tech Care</h3>
+                    HPE Pointnext Tech Care is the new operational service experience for HPE products. Tech Care goes
+                    beyond traditional
+                    support
+                    by providing access to product specific experts, an AI driven digital experience, and general
+                    technical guidance to not
+                    only reduce
+                    risk but constantly search for ways to do things better. HPE Pointnext Tech Care has been reimagined
+                    from the ground up
+                    to
+                    support a customer-centric, AI driven, and digitally enabled customer experience to move your
+                    business forward.
+                    HPE Pointnext Tech Care is available in three response levels. Basic, which provides 9x5 business
+                    hour availability and
+                    a 2
+                    hour response time. Essential which provides a 15 minute response time 24x7 for most enterprise
+                    level customers, and
+                    Critical
+                    which includes a 6 hour repair commitment where available and outage management response for
+                    severity 1 incidents.
+                    <a href="https://www.hpe.com/services/techcare">https://www.hpe.com/services/techcare</a>
+                    </p>
+                </section>
+
+                <section>
+                    <h4>HPE Pointnext Complete Care</h4>
+                    <p>HPE Pointnext Complete Care is a modular, edge-to-cloud IT environment service that provides a
+                        holistic approach to
+                        optimizing
+                        your entire IT environment and achieving agreed upon IT outcomes and business goals through a
+                        personalized and
+                        customercentric
+                        experience. All delivered by an assigned team of HPE Pointnext Services experts. HPE Pointnext
+                        Complete Care provides:</p>
+                    <ul>
+                        <li>A complete coverage approach -- edge to cloud</li>
+                        <li>An assigned HPE team</li>
+                        <li>Modular and fully personalized engagement</li>
+                        <li>Enhanced Incident Management experience with priority access</li>
+                        <li>Digitally enabled and AI driven customer experience</li>
+                    </ul>
+                    <p><a href="https://www.hpe.com/services/completecare">https://www.hpe.com/services/completecare</a>
+                    </p>
+                </section>
+                <section>
+                    <h4>HPE Education Services</h4>
+                    <p>Keep your IT staff trained making sure they have the right skills to deliver on your
+                        business outcomes. Book on a class today and learn how to get the most
+                        from your technology investment. <a
+                            href="http://www.hpe.com/ww/learn">http://www.hpe.com/ww/learn</a></p>
+                </section>
+
+                <div class="ruler"></div>
+
+                <section>
+                    <h4>HPE Support Center</h4>
+                    <p>The HPE Support Center is a personalized online support portal with access to information,
+                        tools and experts to support HPE business products. Submit support cases online, chat with
+                        Hewlett Packard Enterprise experts, access support resources orcollaborate with peers.
+                        <br>Learn more <a href="http://www.hpe.com/support/hpesc">http://www.hpe.com/support/hpesc</a>
+                    </p>
+                    <p>The HPE Support Center Mobile App* allows you to resolve issues yourself or quickly connect to an
+                        agent for live
+                        support. Now, you can get access to personalized IT support anywhere, anytime.</p>
+                    <p>HPE Insight Remote Support and HPE Support Center are available at no additional cost with a HPE
+                        warranty, HPE Support
+                        Service or HPE contractual support agreement. <br>
+                        <span class="blue-notes"><span class="bold">Notes:</span> *HPE Support Center Mobile App is
+                            subject to local availability</span>
+                    </p>
+                </section>
+
+                <div class="ruler"></div>
+
+                <section>
+                    <h4>Parts and Materials</h4>
+                    <p>Hewlett Packard Enterprise will provide HPE-supported replacement parts and materials
+                        necessary to maintain the covered hardware product in operating condition, including parts
+                        and materials for available and recommended engineering improvements.</p>
+                    <p>Parts and components that have reached their maximum supported lifetime and/or the maximum
+                        usage limitations as set forth in the manufacturer's operating manual, product QuickSpecs,
+                        or the technical product data sheet will not be provided, repaired, or replaced as
+                        part of these services.</p>
+                    <p>The defective media retention service feature option applies only to Disk or eligible SSD/Flash
+                        Drives replaced by
+                        Hewlett Packard Enterprise due to malfunction.</p>
+                </section>
+
+                <div class="ruler"></div>
+
+                <section>
+                    <h3>Related Services</h3>
+                    <h4>HPE Server Hardware Installation</h4>
+                    <p>Provides for the basic hardware installation of HPE branded servers, storage devices
+                        and networking options to assist you in bringing your new hardware into operation
+                        in a timely and professional manner <br>
+                        <a href="https://www.hpe.com/h20195/V2/GetPDF.aspx/5981-9356EN.pdf"
+                            class="bold">https://www.hpe.com/h20195/V2/GetPDF.aspx/5981-9356EN.pdf</a>
+                    </p>
+
+                    <p>HPE Installation and Startup Service provides for the installation and startup of HPE technology
+                        including BladeSystems,
+                        C-Class
+                        enclosure, HPE ProLiant c-Class and Integrity server blades, storage blades, SAN switch blades,
+                        HPE Virtual Connect
+                        modules(Ethernet and Fibre Channel), Ethernet network interconnects, and InfiniBand, as well as
+                        the installation of one
+                        supported operating system type (Windows&reg; or Linux).</p>
+                    <p>Warranty and Support Services will extend to include HPE options configured with your server or
+                        storage device. The
+                        price of
+                        support service is not impacted by configuration details. HPE sourced options that are
+                        compatible with your product will
+                        be
+                        covered under your server support at the same level of coverage allowing you to upgrade freely.
+                        Installation for HPE
+                        options is
+                        available as needed. To keep support costs low for everyone, some high value options will
+                        require additional support.
+                        Additional
+                        support is only required on select high value workload accelerators, fibre switches, InfiniBand
+                        and UPS batteries over
+                        12KVA. See
+                        the specific high value options that require additional support <a
+                            href="https://www.hpe.com/h20195/V2/GetDocument.aspx?docname=4AA4-6535ENW&amp;cc=us&amp;lc=en"
+                            class="bold"> HERE</a>.</p>
+
+                </section>
+
+                <div class="ruler"></div>
+
+                <section>
+                    <h4>For more information</h4>
+                    <p>Visit the Hewlett Packard Enterprise Service and Support <a
+                            href="https://www.hpe.com/us/en/services.html" class="bold">website</a>.</p>
+                </section>
+
+            </article>
+        </section>
+
+        <div class="ruler"></div>
+
+        <section class="main-section" id="Summary_of_Changes">
+            <header>
+                <h3>Summary of Changes</h3>
+            </header>
+            <article>
+                <table>
+                    <tr>
+                        <th class="table-description">Date</th>
+                        <th class="table-description">Version History</th>
+                        <th class="table-description">Action</th>
+                        <th class="table-description">Description of Change</th>
+                    </tr>
+                    <tr>
+                        <td>02-May-2022</td>
+                        <td>Version 4</td>
+                        <td>Changed</td>
+                        <td>Overview Section was updated</td>
+                    </tr>
+                    <tr>
+                        <td>04-Oct-2021</td>
+                        <td>Version 3</td>
+                        <td>Changed</td>
+                        <td>Service and Support Section was updated</td>
+                    </tr>
+                    <tr>
+                        <td>07-Jun-2021</td>
+                        <td>Version 2</td>
+                        <td>Changed</td>
+                        <td>Descriptions were updated</td>
+                    </tr>
+                    <tr>
+                        <td>06-Apr-2021</td>
+                        <td>Version 1</td>
+                        <td>New</td>
+                        <td>New QuickSpecs</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <section class="main-section" id="Copyright">
+            <header>
+                <h3>Copyright</h3>
+            </header>
+            <article>
+            <section id="copyright-img">
+                <p class="Copyrightspan">Make the right purchase decision. <br>Contact our presales specialists.</p>
+                <a href="https://www.hpe.com/global/hpechat/index.html?jumpid=Collaterals_a50002563enw"><img src="https://www.hpe.com/psnow/resources/quickspecs/a50002563enw_v8.0/v2/PDF/a50002563enw/image001.gif" alt="Chat now (sales)" class="Copyrightspan" id="chatnow"></a>
+                <a href="https://www.hpe.com/us/en/contact-hpe.html"><img src="https://www.hpe.com/psnow/resources/quickspecs/a50002563enw_v8.0/v2/PDF/a50002563enw/image002.gif" alt="Call now" class="Copyrightspan" id="callnow"></a>
+                <a href="http://www.hpe.com/info/getupdated"><img src="https://www.hpe.com/psnow/resources/quickspecs/a50002563enw_v8.0/v2/PDF/a50002563enw/image003.gif" alt="Get updates" class="Copyrightspan" id="getupdated"></a>
+                <img src="https://www.hpe.com/psnow/resources/quickspecs/a50002563enw_v8.0/v2/PDF/a50002563enw/image004.jpg" alt="HPE logo" class="Copyrightspan" id="logo">
+            </section>
+            <section class="Copyright-article">
+                <p>&copy;Copyright 2022 Hewlett Packard Enterprise Development LP. The information contained herein is subject
+                to change without notice. The only warranties for Hewlett Packard Enterprise products and services are set
+                forth in the express warranty statements accompanying such products and services. Nothing herein should
+                be construed as constituting an additional warranty. Hewlett Packard Enterprise shall not be liable for
+                technical or editorial errors or omissions contained herein.</p>
+                <p>
+                    Microsoft and Windows are registered trademarks or trademarks of Microsoft Corporation in the U.S. and/or
+                    other countries.
+                </p>
+                <p>
+                    a50002563enw - 16718 - Worldwide - V4 - 02-May-2022
+                </p>
+
+            </section>
+            <article>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

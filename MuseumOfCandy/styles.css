@@ -1,0 +1,92 @@
+:root {
+    --txt-col1: #FDFAFA;
+    --txt-col2: #963d5a;
+    --txt-col3: #ED82A6;
+    --bg-col1: #F5D9D5;
+    --bg-col2: #FFC6D9;
+}
+
+body {
+    /* background-color: #FFD1E9; */
+    background-color: var(--bg-col1);
+    font-family: "Nunito", sans-serif;
+}
+
+.sometexts h2 {
+    color: var(--txt-col2);
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.sometexts p {
+    color: var(--txt-col3);
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content {
+
+    margin-top: 100px;
+}
+
+#mainNavbar .navbar-brand {
+    color: var(--txt-col2);
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-left: 2.25rem;
+}
+
+#mainNavbar {
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--txt-col1);
+}
+
+#mainNavbar .nav-link {
+    color: var(--txt-col1);
+}
+
+#mainNavbar .nav-link:hover {
+    color: var(--txt-col2);
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+#headingGroup span {
+    color: var(--txt-col2);
+    font-weight: 200;
+}
+
+.navbar.scrolled {
+    background-color: var(--bg-col2);
+    transition: background 550ms;
+}
+
+.candycane {
+    transform: rotate(-20deg);
+    height: 2.65rem;
+    position: relative;
+    bottom: .38rem;
+}
+
+@media (max-width:1300px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    
+}
+
+@media (min-width:300px) and (max-width:450px) {
+    #mainNavbar{
+        padding: 1rem;
+    }
+    #mainNavbar .navbar-brand {
+        margin:0;
+        padding: 0;
+    }
+}
